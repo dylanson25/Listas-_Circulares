@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App de inventario</title>
+</head>
+
+<body>
+    <form method="POST" action="main2.js">
+        <!--Agregar-->
+        <h3>Nombre de la base: </h3>
+        <input id="nombreBase" type="text" name="nombre de la base" placeholder="Base" />
+        <h3>Tiempo de la base</h3>
+        <input id="tiempoBase" type="number" name="Tiempo de la base" placeholder="Tiempo de trayecto"> <br>
+        <input type="button" id="btnAgregar" name="agregarProduct" value="Agregar base" /> <br>
+
+        <!--Eliminar-->
+        <h3>Eliminar una base:</h3>
+        <input type="text" id="eliminarBase">
+        <input type="button" value="Eliminar Base" id="btnEliminar" />
+
+        <!--Buscar-->
+        <h3>Buscar una base:</h3>
+        <input type="text" id="buscarBase">
+        <input type="button" value="Buscar base" id="btnBuscar" />
+        <!--Mostrar bases-->
+        <br><input type="button" value="Imprimir bases" id="btnMostar" />
+        
+        <!--Crear recorrido-->
+        <h3>Base inicio:</h3>
+        <input type="text" id="baseInicio"><br>
+        <label for="text">Hora inicio:</label>
+        <input type="number" id="horaInicio">
+        <p></p>
+        <label for="text">Hora fin:</label>
+        <input type="number" id="horaFin">
+        <input type="button" value="Crear recorrido" id="btnCrearRecorrido" />
+
+        <div>
+            <ul id="lista"></ul>
+        </div>
+
+    </form>
+    <script src="main2.js"></script>
+</body>
+
+</html>
